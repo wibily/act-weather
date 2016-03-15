@@ -1,0 +1,13 @@
+{
+  "name": "bom_proxy",
+  "description": "Proxy for bom ACT weather statation",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-http-proxy": "^0.6.0"
+  },
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}
