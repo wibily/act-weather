@@ -1,21 +1,12 @@
-let http = require('http');
+"use strict";
+
 let app = require('express')();
-//http://www.bom.gov.au/fwo/IDN60903/IDN60903.94926.json
+var request = require('request');
+
+let url = "http://www.bom.gov.au/fwo/IDN60903/IDN60903.94926.json";
 
 app.get('/api/act', (req, resp)=>{
-    let options = {
-        hostname: 'www.google.com',
-        port: 80,
-        path: '/upload',
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/x-www-form-urlencoded',
-            'Content-Length': postData.length
-        }
-    };
-
-    resp.
-
+    req.pipe(request(url)).pipe(resp);
 });
 
 app.listen(3000);
